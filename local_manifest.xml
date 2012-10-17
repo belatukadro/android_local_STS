@@ -31,7 +31,7 @@
   <remove-project name="platform/packages/apps/VoiceDialer" />
   <remove-project name="AOKP/packages_providers_ContactsProvider" />
   <remove-project name="platform/packages/providers/DrmProvider" />
-  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <remove-project name="AOKP/packages_providers_TelephonyProvider" />
   
   <!-- AOKP replacements -->
   <project path="build" name="STS-Dev-Team/android_build" remote="gh" revision="jb-aokp" >
