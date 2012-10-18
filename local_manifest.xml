@@ -1,83 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="gh"
+           fetch="git://github.com/" />
+
   <remote  name="omapzoom"
            fetch="git://git.omapzoom.org/" />
 
   <!-- CM removals -->
-  <!-- <remove-project name="CyanogenMod/android_bionic" /> -->
-  <remove-project name="CyanogenMod/android_build" />
-  <remove-project name="CyanogenMod/android_development" />
-  <remove-project name="CyanogenMod/android_frameworks_av" />
-  <remove-project name="CyanogenMod/android_frameworks_base" />
-  <remove-project name="CyanogenMod/android_frameworks_native" />
-  <remove-project name="CyanogenMod/android_hardware_libhardware" />
-  <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-  <remove-project name="CyanogenMod/android_hardware_ril" />
-  <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
-  <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
-  <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
-  <remove-project name="CyanogenMod/android_hardware_qcom_media" />
-  <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
-  <remove-project name="CyanogenMod/android_packages_apps_Contacts" />
-  <remove-project name="CyanogenMod/android_packages_apps_Mms" />
-  <remove-project name="CyanogenMod/android_packages_apps_Phone" />
-  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
-  <remove-project name="CyanogenMod/android_packages_apps_Stk" />
-  <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
-  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <remove-project name="CyanogenMod/android_packages_providers_ContactsProvider" />
-  <remove-project name="CyanogenMod/android_packages_providers_DrmProvider" />
-  <remove-project name="CyanogenMod/android_packages_providers_TelephonyProvider" />
-  <remove-project name="CyanogenMod/android_system_core" />
+  <!-- <remove-project name="CNA/android_bionic" /> -->
+  <remove-project name="CNA/android_build" />
+  <remove-project name="CNA/android_development" />
+  <remove-project name="CNA/android_frameworks_av" />
+  <remove-project name="CNA/android_frameworks_base" />
+  <remove-project name="CNA/android_frameworks_native" />
+  <remove-project name="CNA/android_hardware_libhardware" />
+  <remove-project name="CNA/android_hardware_libhardware_legacy" />
+  <remove-project name="CNA/android_hardware_ril" />
+  <remove-project name="platform/hardware/ti/omap4xxx" />
+  <remove-project name="platform/hardware/ti/wlan" />
+  <remove-project name="platform/hardware/ti/wpan" />
+  <remove-project name="CNA/android_hardware_qcom_media" />
+  <remove-project name="CNA/android_packages_apps_Contacts" />
+  <remove-project name="CNA/android_packages_apps_Mms" />
+  <remove-project name="CNA/android_packages_apps_Phone" />
+  <remove-project name="CNA/android_packages_apps_Settings" />
+  <remove-project name="CNA/android_packages_apps_Stk" />
+  <remove-project name="platform/packages/apps/VoiceDialer" />
+  <remove-project name="CNA/android_packages_providers_ContactsProvider" />
+  <remove-project name="platform/packages/providers/DrmProvider" />
+  <remove-project name="CNA/android_packages_providers_TelephonyProvider" />
+  <remove-project name="CNA/android_system_core" />
   
   <!-- CM replacements -->
-  <project path="build" name="STS-Dev-Team/android_build" >
+  <project path="build" name="STS-Dev-Team/android_build" remote="gh" revision="jb-cna">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <!-- <project path="bionic" name="STS-Dev-Team/android_bionic" /> -->
-  <project path="development" name="STS-Dev-Team/android_development" />
-  <project path="frameworks/av" name="STS-Dev-Team/android_frameworks_av" />
-  <project path="frameworks/base" name="STS-Dev-Team/android_frameworks_base" revision="jellybean-3way" />
-  <project path="frameworks/native" name="STS-Dev-Team/android_frameworks_native" />
-  <project path="hardware/libhardware" name="STS-Dev-Team/android_hardware_libhardware" />
-  <project path="hardware/libhardware_legacy" name="STS-Dev-Team/android_hardware_libhardware_legacy" />
-  <project path="hardware/ril" name="STS-Dev-Team/android_hardware_ril" />
-  <project path="hardware/ti/omap4xxx" name="STS-Dev-Team/android_hardware_ti_omap4xxx" revision="jellybean-stock" />
-  <project path="hardware/ti/wpan" name="Hashcode/android_hardware_ti_wpan" revision="jellybean" />
-  <project path="packages/apps/Bluetooth" name="STS-Dev-Team/android_packages_apps_Bluetooth" />
-  <project path="packages/apps/Contacts" name="STS-Dev-Team/android_packages_apps_Contacts" />
-  <project path="packages/apps/Mms" name="STS-Dev-Team/android_packages_apps_Mms" />
-  <project path="packages/apps/Phone" name="STS-Dev-Team/android_packages_apps_Phone" />
-  <project path="packages/apps/Settings" name="STS-Dev-Team/android_packages_apps_Settings" />
-  <project path="packages/apps/Stk" name="STS-Dev-Team/android_packages_apps_Stk" />
-  <project path="packages/apps/VoiceDialer" name="STS-Dev-Team/android_packages_apps_VoiceDialer" />
-  <project path="packages/providers/ContactsProvider" name="STS-Dev-Team/android_packages_providers_ContactsProvider" />
-  <project path="packages/providers/DrmProvider" name="STS-Dev-Team/android_packages_providers_DrmProvider" />
-  <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" />
-  <project path="system/core" name="STS-Dev-Team/android_system_core" />
+  <project path="development" name="STS-Dev-Team/android_development" remote="gh" revision="jellybean" />
+  <project path="frameworks/av" name="STS-Dev-Team/android_frameworks_av" remote="gh" revision="jellybean" />
+  <project path="frameworks/base" name="STS-Dev-Team/android_frameworks_base" remote="gh" revision="jb-cna" />
+  <project path="frameworks/native" name="STS-Dev-Team/android_frameworks_native" remote="gh" revision="jellybean" />
+  <project path="hardware/libhardware" name="STS-Dev-Team/android_hardware_libhardware" remote="gh" revision="jellybean" />
+  <project path="hardware/libhardware_legacy" name="STS-Dev-Team/android_hardware_libhardware_legacy" remote="gh" revision="jellybean" />
+  <project path="hardware/ril" name="STS-Dev-Team/android_hardware_ril" remote="gh" revision="jellybean" />
+  <project path="hardware/ti/omap4xxx" name="STS-Dev-Team/android_hardware_ti_omap4xxx" remote="gh" revision="jellybean-stock" />
+  <project path="hardware/ti/wpan" name="Hashcode/android_hardware_ti_wpan" remote="gh" revision="jellybean" />
+  <project path="packages/apps/Contacts" name="STS-Dev-Team/android_packages_apps_Contacts" remote="gh" revision="jb-cna" />
+  <project path="packages/apps/Mms" name="STS-Dev-Team/android_packages_apps_Mms" remote="gh" revision="jb-cna" />
+  <project path="packages/apps/Phone" name="STS-Dev-Team/android_packages_apps_Phone" remote="gh" revision="jb-cna" />
+  <project path="packages/apps/Settings" name="STS-Dev-Team/android_packages_apps_Settings" remote="gh" revision="jb-cna" />
+  <project path="packages/apps/Stk" name="STS-Dev-Team/android_packages_apps_Stk" remote="gh" revision="jellybean" />
+  <project path="packages/apps/VoiceDialer" name="STS-Dev-Team/android_packages_apps_VoiceDialer" remote="gh" revision="jellybean" />
+  <project path="packages/providers/ContactsProvider" name="STS-Dev-Team/android_packages_providers_ContactsProvider" remote="gh" revision="jb-cna" />
+  <project path="packages/providers/DrmProvider" name="STS-Dev-Team/android_packages_providers_DrmProvider" remote="gh" revision="jellybean" />
+  <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" remote="gh" revision="jellybean" />
+  <project path="system/core" name="STS-Dev-Team/android_system_core" remote="gh" revision="jellybean" />
 
   <!-- local devices -->
-  <project path="device/motorola/common" name="STS-Dev-Team/android_device_motorola_common" revision="jb" />
-  <project path="device/motorola/edison" name="STS-Dev-Team/android_device_motorola_edison" revision="jb" />
-  <project path="device/motorola/maserati" name="STS-Dev-Team/android_device_motorola_maserati" revision="jb" />
-  <project path="device/motorola/spyder" name="STS-Dev-Team/android_device_motorola_spyder" revision="jb" />
-  <project path="device/motorola/targa" name="STS-Dev-Team/android_device_motorola_targa" revision="jb" />
-  <project path="device/motorola/umts_spyder" name="STS-Dev-Team/android_device_motorola_umts_spyder" revision="jb" />
+  <project path="device/motorola/common" name="STS-Dev-Team/android_device_motorola_common" remote="gh" revision="jb" />
+  <project path="device/motorola/edison" name="STS-Dev-Team/android_device_motorola_edison" remote="gh" revision="jb" />
+  <project path="device/motorola/maserati" name="STS-Dev-Team/android_device_motorola_maserati" remote="gh" revision="jb" />
+  <project path="device/motorola/spyder" name="STS-Dev-Team/android_device_motorola_spyder" remote="gh" revision="jb" />
+  <project path="device/motorola/targa" name="STS-Dev-Team/android_device_motorola_targa" remote="gh" revision="jb" />
+  <project path="device/motorola/umts_spyder" name="STS-Dev-Team/android_device_motorola_umts_spyder" remote="gh" revision="jb" />
 
   <!-- local vendor -->
-  <project path="vendor/motorola/common" name="STS-Dev-Team/android_vendor_motorola_common" revision="jb" />
-  <project path="vendor/motorola/edison" name="STS-Dev-Team/android_vendor_motorola_edison" revision="master" />
-  <project path="vendor/motorola/maserati" name="STS-Dev-Team/android_vendor_motorola_maserati" revision="master" />
-  <project path="vendor/motorola/spyder" name="STS-Dev-Team/android_vendor_motorola_spyder" revision="master" />
-  <project path="vendor/motorola/targa" name="STS-Dev-Team/android_vendor_motorola_targa" revision="master"  />
-  <project path="vendor/motorola/umts_spyder" name="STS-Dev-Team/android_vendor_motorola_umts_spyder" revision="master" />
+  <project path="vendor/motorola/common" name="STS-Dev-Team/android_vendor_motorola_common" remote="gh" revision="jb" />
+  <project path="vendor/motorola/edison" name="STS-Dev-Team/android_vendor_motorola_edison" remote="gh" revision="master" />
+  <project path="vendor/motorola/maserati" name="STS-Dev-Team/android_vendor_motorola_maserati" remote="gh" revision="master" />
+  <project path="vendor/motorola/spyder" name="STS-Dev-Team/android_vendor_motorola_spyder" remote="gh" revision="master" />
+  <project path="vendor/motorola/targa" name="STS-Dev-Team/android_vendor_motorola_targa" remote="gh" revision="master"  />
+  <project path="vendor/motorola/umts_spyder" name="STS-Dev-Team/android_vendor_motorola_umts_spyder" remote="gh" revision="master" />
 
   <!-- local misc -->
-  <project path="frameworks/opt/telephony" name="STS-Dev-Team/android_frameworks_opt_telephony" revision="jellybean"/>
-  <project path="packages/apps/FileManager" name="STS-Dev-Team/android_packages_apps_FileManager" revision="ics" />
-  <project path="kernel/motorola/omap4_xt912" name="STS-Dev-Team/kernel_omap4_xt912" revision="master" />
-  <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.7" name="STS-Dev-Team/arm-eabi-4.7" revision="master" />
+  <project path="frameworks/opt/telephony" name="STS-Dev-Team/android_frameworks_opt_telephony" remote="gh" revision="jellybean"/>
+  <project path="packages/apps/FileManager" name="STS-Dev-Team/android_packages_apps_FileManager" remote="gh" revision="ics" />
+  <project path="kernel/motorola/omap4_xt912" name="STS-Dev-Team/kernel_omap4_xt912" remote="gh" revision="master" />
+  <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.4.3" name="STS-Dev-Team/arm-eabi-4.4.3" remote="gh" revision="master" />
+  <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.7" name="STS-Dev-Team/arm-eabi-4.7" remote="gh" revision="master" />
 
   <!-- TI addons -->
   <project path="device/ti/common-open" name="device/ti/common-open" remote="omapzoom" revision="jb-release" />
@@ -86,10 +87,9 @@
   <project path="external/crda" name="platform/external/crda" remote="omapzoom" revision="p-ics-mr0" />
   <project path="external/wpa_supplicant_8_ti" name="platform/external/wpa_supplicant_8_ti" remote="omapzoom" revision="jb-release" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" remote="omapzoom" revision="master"/>
-  <!-- <project path="hardware/ti/domx" name="platform/hardware/ti/domx" remote="omapzoom" revision="jb-release" /> -->
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="p-jb-release" />
   <project path="packages/apps/OMAPCamera" name="platform/packages/apps/OMAPCamera" remote="omapzoom" revision="jb-release" />
 
-  <project path="packages/apps/otaupdater" name="STS-Dev-Team/ota-update-centre" revision="noicon" />
+  <project path="packages/apps/otaupdater" name="STS-Dev-Team/ota-update-centre" remote="gh" revision="noicon" />
 
 </manifest>
