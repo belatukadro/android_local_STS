@@ -22,7 +22,6 @@
   <remove-project name="platform/hardware/ti/wpan" />
   <remove-project name="CNA/android_hardware_qcom_media" />
   <remove-project name="CNA/android_packages_apps_Contacts" />
-  <remove-project name="CNA/android_packages_apps_Gallery2" />
   <remove-project name="CNA/android_packages_apps_Mms" />
   <remove-project name="CNA/android_packages_apps_Phone" />
   <remove-project name="CNA/android_packages_apps_Settings" />
@@ -57,7 +56,6 @@
   <project path="packages/providers/DrmProvider" name="STS-Dev-Team/android_packages_providers_DrmProvider" remote="gh" revision="jellybean" />
   <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" remote="gh" revision="jellybean" />
   <project path="system/core" name="STS-Dev-Team/android_system_core" remote="gh" revision="jellybean" />
-  <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" remote="gh" revision="jellybean" />
 
   <!-- local devices -->
   <project path="device/motorola/common" name="STS-Dev-Team/android_device_motorola_common" remote="gh" revision="jb" />
