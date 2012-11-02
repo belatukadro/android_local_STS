@@ -3,11 +3,11 @@
   <remote  name="gh"
            fetch="git://github.com/" />
   <remove-project name="CyanogenMod/android_hardware_ril" />
-  <remove-project name="CyanogenMod/android_system_core" />
   <project path="hardware/ril" name="STS-Dev-Team/android_hardware_ril" />
-  <project path="system/core" name="STS-Dev-Team/android_system_core" revision="jellybean-msm8960" />
   <project path="device/motorola/msm8960-common" name="STS-Dev-Team/android_device_motorola_msm8960-common" remote="gh" revision="jellybean" />
   <project path="device/motorola/scorpion_mini" name="STS-Dev-Team/android_device_motorola_scorpion_mini" remote="gh" revision="jellybean" />
   <project path="vendor/motorola/scorpion_mini" name="STS-Dev-Team/android_vendor_motorola_scorpion_mini" remote="gh" revision="jellybean" />
+  <project path="device/motorola/vanquish" name="STS-Dev-Team/android_device_motorola_vanquish" remote="gh" revision="jellybean" />
+  <project path="vendor/motorola/vanquish" name="STS-Dev-Team/android_vendor_motorola_vanquish" remote="gh" revision="jellybean" />
   <project path="kernel/motorola/msm8960-common" name="STS-Dev-Team/android_kernel_motorola_msm8960-common" remote="gh" revision="jellybean" />
 </manifest>
