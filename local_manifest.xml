@@ -56,7 +56,7 @@
   <project path="packages/apps/VoiceDialer" name="STS-Dev-Team/android_packages_apps_VoiceDialer" remote="gh" revision="jellybean" />
   <project path="packages/providers/ContactsProvider" name="STS-Dev-Team/android_packages_providers_ContactsProvider" remote="gh" revision="jb-aokp" />
   <project path="packages/providers/DrmProvider" name="STS-Dev-Team/android_packages_providers_DrmProvider" remote="gh" revision="jellybean" />
-  <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" remote="gh" revision="jellybean" />
+  <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" remote="gh" revision="jb-aokp" />
   <project path="system/core" name="STS-Dev-Team/android_system_core" remote="gh" revision="jellybean" />
 
   <!-- local devices -->
