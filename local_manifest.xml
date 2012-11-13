@@ -39,7 +39,7 @@
   <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" revision="jellybean-msm8960" />
 
   <!-- AOSP additions -->
-  <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" remote="aosp" revision="master"/>
+  <project path="frameworks/opt/mms" name="STS-Dev-Team/andorid_frameworks_opt_mms" revision="master"/>
   <project path="frameworks/opt/telephony" name="STS-Dev-Team/android_frameworks_opt_telephony" revision="jellybean-msm8960"/>
 
   <!-- local projects -->
