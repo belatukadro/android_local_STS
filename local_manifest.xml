@@ -24,7 +24,6 @@
   <project path="build" name="STS-Dev-Team/android_build" revision="jellybean-msm8960" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="development" name="STS-Dev-Team/android_development" />
   <project path="frameworks/base" name="STS-Dev-Team/android_frameworks_base" revision="jellybean-msm8960" />
   <project path="hardware/ril" name="STS-Dev-Team/android_hardware_ril" revision="jellybean-msm8960" />
   <project path="packages/apps/Bluetooth" name="STS-Dev-Team/android_packages_apps_Bluetooth" />
@@ -39,7 +38,7 @@
   <project path="packages/providers/TelephonyProvider" name="STS-Dev-Team/android_packages_providers_TelephonyProvider" revision="jellybean-msm8960" />
 
   <!-- AOSP additions -->
-  <project path="frameworks/opt/mms" name="STS-Dev-Team/android_frameworks_opt_mms" revision="master"/>
+  <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms/" remote="aosp" revision="master"/>
   <project path="frameworks/opt/telephony" name="STS-Dev-Team/android_frameworks_opt_telephony" revision="jellybean-msm8960"/>
 
   <!-- local projects -->
